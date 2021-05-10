@@ -1,0 +1,11 @@
+docker == 5.0.0
+docker-compose == 1.29.1
+configparser == 5.0.2
+cookiecutter == 1.7.2
+dvc == 2.0.5
+mlflow == 1.14.1
+mlflow-dbstore == 1.0.1
+flask ==  1.1.2
+cloudpickle == 1.6.0
+pysqlite3 == 0.4.6
+
