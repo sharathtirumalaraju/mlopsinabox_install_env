@@ -35,7 +35,7 @@ Run project on
 - Linux distribution or Windows
     - Run mlopsinabox.sh script in root directory. This installs complete setup that includes git, DVC and Mlflow.
 	```bash
-	$ bash mlopsinabox_ansible.sh
+	$ bash mlopsinabox.sh
 	```
 ### The resulting directory structure
 ------------
