@@ -5,6 +5,12 @@ _A logical, reasonably standardized, but flexible project structure for doing an
 
 #### [Project homepage](https://github.com/sharathtirumalaraju/mlopsinabox)
 
+#### To start with installing the environment setup
+----------
+```bash
+$ git clone https://github.com/sharathtirumalaraju/mlopsinabox_install_env
+```
+
 #### Installing MLOps setup environment
 ----------
 MLOps working environment can be installed on Windows and Linux distributions.
