@@ -21,7 +21,7 @@
       name: "installing python packages with pip"
       pip: 
         name: "{{package}}"
-        state: present
+        state: latest
       vars: 
         package: 
           - dvc
