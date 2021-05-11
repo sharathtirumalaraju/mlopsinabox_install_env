@@ -29,6 +29,6 @@
           - pysqlite3 
           - configparser
           - cookiecutter
-      pip:
+      pip3:
         name: "{{package}}"
         state: present
