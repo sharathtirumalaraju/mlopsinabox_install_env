@@ -3,4 +3,4 @@ echo "change the host file by deleting the default config and add localhost=127.
 sleep 7s
 gedit /etc/ansible/hosts
 sleep 30s
-ansible-playbook mlopsinabox.yml
+ansible-playbook mlopsinabox.yml -e "ansible_python_interpreter=/usr/bin/python3"
