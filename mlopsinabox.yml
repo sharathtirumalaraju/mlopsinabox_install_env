@@ -1,34 +1,34 @@
----
+--- 
 - 
-  name: installing MLOps setup environment
-  hosts: localhost
   connection: local
-  tasks:
-    -
-      name: install required tools and packages
+  hosts: localhost
+  name: "installing MLOps setup environment"
+  tasks: 
+    - 
+      apt: 
+        name: "{{packages}}"
+        state: present
       become: true
-      vars:
-        packages:
+      name: "install required tools and packages"
+      vars: 
+        packages: 
           - git
           - python3-pip
           - docker
           - docker-compose
-      apt:
-        name: "{{packages}}"
-        state: present
-    -
-      name: installing python packages with pip
+    - 
       become: true
-      vars:
-        package:
+      name: "installing python packages with pip"
+      pip3: 
+        name: "{{package}}"
+        state: present
+      vars: 
+        package: 
           - dvc
           - mlflow
           - mlflow-dbstore
           - flask
           - cloudpickle
-          - pysqlite3 
+          - pysqlite3
           - configparser
           - cookiecutter
-      pip3:
-        name: "{{package}}"
-        state: present
