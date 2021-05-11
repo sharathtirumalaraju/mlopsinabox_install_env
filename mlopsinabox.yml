@@ -19,7 +19,7 @@
     - 
       become: true
       name: "installing python packages with pip"
-      pip3: 
+      pip: 
         name: "{{package}}"
         state: present
       vars: 
