@@ -10,7 +10,7 @@
       vars:
         packages:
           - git
-          - python-pip
+          - python3-pip
           - docker
           - docker-compose
       apt:
