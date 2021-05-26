@@ -1,5 +1,5 @@
 #start with cookiecutter template download
-python3 -m cookiecutter https://github.com/sharathtirumalaraju/mlopsinabox
+python -m cookiecutter https://github.com/sharathtirumalaraju/mlopsinabox
 #choose project directory
 read -p "enter your project name given above:" projectdirectory
 cd $projectdirectory
@@ -14,7 +14,7 @@ read -p "enter your git repo uri:" gitrepo
 git remote add origin $gitrepo
 read -p "user-email:" email
 read -p "user-name:" username
-python3 -c "from configparser import ConfigParser; c=ConfigParser(); c.read('config.ini'); c.set('git_repo','git_uri','$gitrepo'); c.set('git_repo','git_user_email','$email'); c.set('git_repo','git_user_name','$username'); f=open('config.ini','w'); c.write(f)"
+python -c "from configparser import ConfigParser; c=ConfigParser(); c.read('config.ini'); c.set('git_repo','git_uri','$gitrepo'); c.set('git_repo','git_user_email','$email'); c.set('git_repo','git_user_name','$username'); f=open('config.ini','w'); c.write(f)"
 #add a dvc remote storage using the path of storage directory
 dvc remote add -d localstorage $cwd/data/external
 #add dvc config to git
