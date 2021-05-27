@@ -5,13 +5,7 @@ _A logical, reasonably standardized, but flexible project structure for doing an
 
 #### [Project homepage](https://github.com/sharathtirumalaraju/mlopsinabox)
 
-#### To start with installing the environment setup
-----------
-```bash
-git clone https://github.com/sharathtirumalaraju/mlopsinabox_install_env
-```
-
-#### Installing MLOps setup environment
+#### Installing required tools and packages
 ----------
 MLOps working environment can be installed on Windows and Linux distributions.
  
@@ -40,6 +34,12 @@ bash mlopsinabox_ansible.sh
     ```cmd
         pip install -r requirements.txt
     ```
+
+#### To start with installing the MLOps setup environment
+----------
+```bash
+git clone https://github.com/sharathtirumalaraju/mlopsinabox_install_env
+```
 ### To start a new project, run:
 ------------
 Run project on 
