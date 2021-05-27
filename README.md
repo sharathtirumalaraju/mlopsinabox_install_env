@@ -25,10 +25,21 @@ bash mlopsinabox_ansible.sh
 
     - Download git from [git_download](https://git-scm.com/downloads) and install git.
     - Install pip package manager for windows
+    - Create a virtual environment for your project
+    ```cmd
+        python -m venv mlopsinabox
+    ```
+    - Activate the virtual environment with commands
+    ```cmd
+        cd mlopsinabox/scripts
+    ```
+    ```cmd
+        activate.bat
+    ```
     - Install all required packages with pip
-        ```cmd
+    ```cmd
         pip install -r requirements.txt
-        ```
+    ```
 ### To start a new project, run:
 ------------
 Run project on 
