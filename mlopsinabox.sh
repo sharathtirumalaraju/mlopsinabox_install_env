@@ -20,6 +20,3 @@ git add .dvc/config
 #this commit has info of the remote config with the git, which redirects it to the remote storage
 git commit -m "remote config"
 git push origin master
-
-
-
